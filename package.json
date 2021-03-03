@@ -1,0 +1,27 @@
+{
+  "name": "othernews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "rss-parser": "^3.12.0",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^1.0.6"
+  }
+}
